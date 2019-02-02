@@ -36,7 +36,18 @@
     }  
     .admin a{
       color: #fff;
-    }  
+    }
+
+    .slider figcaption{
+        background-color: rgba(0, 0, 0, 0.5); 
+        color: #fff;
+        padding: 2rem; 
+        width: 1110px; 
+        text-align: center; 
+        font-weight: bolder;
+        position: absolute;
+        top: 430px;
+    }
 
   </style>
 </head>
@@ -63,6 +74,30 @@
       <p><a href="#">Esporte e Lazer</a></p>
     </div>
   </div>
+
+  <section class="lazy slider" data-sizes="50vw">
+    <div>
+      <img src="http://placehold.it/1110x520?text=Image 01">
+      <figcaption>SMDS recebe visita da Coordenação de Desaparecidos da Secretaria Estadual de Desenvolvimento Social</figcaption>
+    </div>
+    <div>
+      <img src="http://placehold.it/1110x520?text=Image 02">
+      <figcaption>Prefeitura de São Gonçalo segue com manutenção nos bairros</figcaption>
+    </div>
+    <div>
+      <img src="http://placehold.it/1110x520?text=Image 03">
+      <figcaption>Defesa Civil realiza testes em sistema de alerta e alarme de chuvas</figcaption>
+    </div>
+    <div>
+      <img src="http://placehold.it/1110x520?text=Image 04">
+      <figcaption>Justiça não encontra irregularidades na gestão dos cemitérios de São Gonçalo</figcaption>
+    </div>
+    <div>
+      <img src="http://placehold.it/1110x520?text=Image 05">
+      <figcaption>Prefeito entrega Plano de Manejo e obras de revitalização da APA do Engenho Pequeno</figcaption>
+    </div>
+  </section>
+
   <div class="alert alert-success">
     Teste com Slick Slider e Bootstrap4
   </div>
@@ -83,6 +118,14 @@
         draggable: true,
         arrows: false,
         autoplay: true
+      });
+
+      $(".lazy").slick({
+        autoplay: true,
+        dots: false,
+        infinite: true,
+        speed: 800,
+        cssEase: 'linear'
       });
      
     });
